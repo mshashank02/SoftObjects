@@ -19,7 +19,7 @@
               file="/home/mshashank02/SoftObjectsV2/objects/large_1/tet_coarse/tetwild_out_.msh"
               dim="3" dof="trilinear"
               pos="-.5 -.5 1" scale="1 1 1" mass="5" radius="0.001">
-      <elasticity young="4e4" poisson="0.49" damping="0.01"/>
+      <elasticity young="5000" poisson="0.40" damping="0.12"/>
       <contact selfcollide="none" internal="false"/>
     </flexcomp>
 
@@ -28,7 +28,7 @@
       <freejoint/>
       <!-- Give it mass & inertia so physics applies.
            If you don't know the inertia, start with an estimate and tune. -->
-      <inertial pos="0 0 0" mass="5" diaginertia="1e-3 1e-3 1e-3"/>
+      <inertial pos="0 0 0" mass="0.5" diaginertia="1e-3 1e-3 1e-3"/>
       <flexcomp name="rigid_copy" type="gmsh"
                 file="/home/mshashank02/SoftObjectsV2/objects/large_1/tet_coarse/tetwild_out_.msh"
                 dim="3" dof="trilinear" rigid="true"
